@@ -10,7 +10,7 @@ import config from './config/config'
 import passport from './config/passportSetup'
 
 const session = require('express-session')
-const MongoStore = require('connect-mongo').default
+const MongoStore = require('connect-mongo')
 
 require('dotenv').config()
 const routes = require('./lib/routes.js')

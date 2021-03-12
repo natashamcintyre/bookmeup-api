@@ -77,7 +77,13 @@ describe('Books API endpoint tests', function () {
   })
 
   it('gets from backend bookshelf with search', function (done) {
-    const data = {
+    const data1 = {
+      book: JSON.stringify({ title: 'test_title', author: 'test_author' }),
+      user: { username: 'brad', email: 'brad@example', location: 'postcode' }
+    }
+    request(app).post('/add-book').send(data1).set('Accept', 'application/json')
+
+    const data2 = {
       book: JSON.stringify({ title: 'another_title', author: 'test_author' }),
       user: { username: 'brad', email: 'brad@example', location: 'postcode' }
     }
@@ -86,7 +92,7 @@ describe('Books API endpoint tests', function () {
 
     request(app)
       .post('/add-book')
-      .send(data)
+      .send(data2)
       .set('Accept', 'application/json')
       .then(
         res = request(app)
