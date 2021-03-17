@@ -1,7 +1,5 @@
 Issues
-* Cannot use MongoDB as we currently have it on Heroku.
-  - Deploy to different hosting service?
-  - Use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/efficiency?utm_source=google&utm_campaign=gs_emea_united_kingdom_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624581&gclid=CjwKCAiA4rGCBhAQEiwAelVtizDjHx5031X3IqmRZghUTNn7V9t8X_S8bDyDob2mWKmhQcbf3ukDnRoCDgkQAvD_BwE) instead?
+* Cannot use MongoDB on Heroku. Transferred DB to [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/efficiency?utm_source=google&utm_campaign=gs_emea_united_kingdom_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624581&gclid=CjwKCAiA4rGCBhAQEiwAelVtizDjHx5031X3IqmRZghUTNn7V9t8X_S8bDyDob2mWKmhQcbf3ukDnRoCDgkQAvD_BwE) instead?
 
 
   # Book Me Up
