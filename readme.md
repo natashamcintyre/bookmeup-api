@@ -1,111 +1,147 @@
-import { expect } from "chai";
-import MessageApp from './app.js'
+Issues
+* Cannot use MongoDB as we currently have it on Heroku.
+  - Deploy to different hosting service?
+  - Use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/efficiency?utm_source=google&utm_campaign=gs_emea_united_kingdom_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624581&gclid=CjwKCAiA4rGCBhAQEiwAelVtizDjHx5031X3IqmRZghUTNn7V9t8X_S8bDyDob2mWKmhQcbf3ukDnRoCDgkQAvD_BwE) instead?
 
-describe("app", function() {
-  let testApp;
 
-  beforeEach(() => {
-    testApp = new MessageApp
-    testApp.post('hi world')
-  })
+  # Book Me Up
+  A web application to allow users to offer books to share with the community.
 
-  it("app has messages", function() {
-    expect(testApp.messages).to.be.an('array');
-  });
+  ## Motivation
+  To demonstrate the ability to build a high quality single page web app, in a new framework as part of a team practising agile development that is focused on thorough test driven development process. Also, to enjoy ourselves.
 
-  it("post method creates a new message", function() {
-    testApp.post('test note');
-    expect(testApp.messages.length).to.equal(2);
-  });
+  ## Build status
+  [![Build Status](https://travis-ci.com/argy-bargy/book_swap.svg?branch=main)](https://travis-ci.com/argy-bargy/book_swap)
 
-  it("message has content, date, and id", function() {
-    expect(testApp.messages[0].content).to.equal('hi world');
-    expect(testApp.messages[0].date).to.equal('01/01/2021');
-    expect(testApp.messages[0].id).to.equal(1);
-  });
+  ## Code style
+  [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
-  it("read method returns a post", function() {
-    expect(testApp.get(0).content).to.equal('hi world');
-  });
+  ## Screenshots
+  ![Home Screen](https://github.com/argy-bargy/book_swap/blob/main/screenshots/Screenshot%202021-03-01%20at%2015.28.59.png)
 
-  it("update method can update the text of a message", function() {
-    testApp.update(0, 'hello world');
-    expect(testApp.get(0).content).to.equal('hello world');
-  });
+  ## Tech/framework used
+  **Built with**
+  - [React](https://reactjs.org)
+  - [Node.JS](https://nodejs.org)
+  - [Express](https://expressjs.com)
+  - [MongoDB](https://www.mongodb.com)
+  - [Atom](https://atom.io)
+  - [Visual Studio Code](https://code.visualstudio.com)
 
-  it("delete method deletes a message", function() {
-    testApp.delete(0);
-    expect(testApp.messages.length).to.equal(0);
-  });
+  ## Features
+  Key Features:
 
-  it("id's are always unique", function() {
-    testApp.post('1') // id 2
-    testApp.post('2') // id 3
-    testApp.delete(1)
-    testApp.post('3') // id 4
-    expect(testApp.messages[1].id).to.equal(3)
-  });
+  * Add a book to lend with a barcode scanner
+  * Search for books by any keyword in the free search field.
+  * See details of each book
+  * See 'virtual library card' of prior readers
+  * Request to borrow a book from the community library
 
-  it("app deletes correctly", function() {
-    testApp.post('1')
-    testApp.post('2')
-    testApp.post('3')
-    testApp.delete(1)
-    testApp.delete(3)
-    expect(testApp.get(2).id).to.equal(2)
-  });
+  ## Code Example
+  Frontend App.JS:
+  ```
+  Refactors needed:
+  * Remove individual title, author, isbn variables from APP.js - DONE :)
+  * Rename bookSearchToo - DONE :)
+  * Refactoring a User object - DONE :)
+  * Combine all three header components (possibly through composition: https://reactjs.org/docs/composition-vs-inheritance.html) - DONE :)
+  * Create generic get request function with URL parameters
+  * Error Handling Front End Set Up??
+  * Refactor out BookHandler.js and UserHandler.js out of APP.js as modules?
+  * Is there a better way of positioning API calls in the file structure?
+  ```
 
-  xit("app deletes correctly", function() {
-    testApp.post('1')
-    testApp.post('2')
-    testApp.delete(1)
-    testApp.update(2, 'update')
-    expect(testApp.get(2).content).to.equal('update')
-  });
+  Backend app.js:
+  ```
+  Refactors needed:
+  ```
 
-});
+  ## Installation
+  To use locally, clone this repo, then:
+  ```
+  $ cd book_swap/backend
+  $ npm install
+  $ cd ../frontend
+  $ npm install
+  ```
+  You will need npm, which is installed with Node.js. Please visit the [Node.js website](https://nodejs.org/en/download/) to download.
 
-class MessageApp {
-  constructor() {
-    this.messages = []
-    this.counter = 1
-  }
 
-  post (content) {
-    let newMessage = {
-      content: content,
-      date: '01/01/2021',
-      id: this.counter
-    };
-    this.counter ++
-    this.messages.push(newMessage);
-  }
+  ### Database Installation
+  You will need homebrew, if you don't please install [Homebrew](https://brew.sh/).
 
-  get(index) {
-    return this.messages[index];
-  }
+  * ```$ brew tap mongodb/brew```
+  * ```$ brew install mongodb-community```
 
-  update(index, content) {
-    this.get(index).content = content;
-    return this.messages[index]
-  }
+  If you have not yet upgraded to MacOs Catalina or above:
+  * ```$ sudo mkdir -p /data/db```
+  * ```$ sudo chown -R `id -un` /data/db```
 
-  delete(index) {
-      this.messages.splice(index, 1);
-      return this.messages
-  }
-}
+  If you do have Catalina or above:
+  * ```$ sudo mkdir -p /System/Volumes/Data/data/db```
+  * ```$ sudo chown -R `id -un` /System/Volumes/Data/data/db```
 
-export default MessageApp
 
-// const array = [2, 5, 9];
-//
-// console.log(array);
-//
-// const index = array.indexOf(5);
-// if (index > -1) {
-//   array.splice(index, 1);
-// }
-//
-// // array = [2, 9]
-// console.log(array);
+  ## API Reference
+  This project utilizes the OpenLibrary Books API: https://openlibrary.org/dev/docs/api/books, to request all related book information.
+
+  ## Tests
+  Cypress for feature tests, Enzyme for React unit tests, and Mocha-Chai for Node.js tests.
+
+  Run the following to for frontend test coverage:
+  ```
+  $ npm test -- --coverage --watchAll=false
+  ```
+  Run the following to open the test runner for end to end testing:
+  ```
+  $ cd backend
+  $ npm start
+  $ cd ../frontend
+  $ npm start
+  $ npx cypress open
+  ```
+  ### Linting
+  We are using ESlint for frontend and backend linting.
+
+  To run from each of the project directories:
+
+  `$ npx eslint .`
+
+  ## How to use?
+  The frontend and backend run independently on separate servers, only in the local environment.
+
+  To use Book Me Up:
+
+  Terminal 1:
+  ```
+  $ cd backend
+  $ npm start
+  ```
+
+  Terminal 2:
+  ```
+  $ cd frontend
+  $ npm start
+  ```
+
+  Before either, ensure the mongodb is running in the background as well.
+
+  ### Database Setup
+  Mongodb needs to be running for the app to work:
+  * ```$ brew services run mongodb-community```
+
+  To check it's working:
+  * ```$ brew services list```
+
+  To Stop:
+  * ```$ brew services stop mongodb-community```
+
+  ## Credits
+
+  Team argy-bargy:
+  [Aman Tank](https://github.com/AmanTank187)
+  [Cathal Lavelle](https://github.com/calavell)
+  [Chris Whitehouse](https://github.com/chriswhitehouse)
+  [Kiki Dawson](https://github.com/kikidawson)
+  [Natasha McIntyre](https://github.com/natashamcintyre")
+  [Will Dixon](https://github.com/WillDixon93)
