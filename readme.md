@@ -1,8 +1,25 @@
-Issues
-* Cannot use MongoDB as we currently have it on Heroku.
-  - Deploy to different hosting service?
-  - Use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/efficiency?utm_source=google&utm_campaign=gs_emea_united_kingdom_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624581&gclid=CjwKCAiA4rGCBhAQEiwAelVtizDjHx5031X3IqmRZghUTNn7V9t8X_S8bDyDob2mWKmhQcbf3ukDnRoCDgkQAvD_BwE) instead?
+Deployed:
+Using [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/efficiency?utm_source=google&utm_campaign=gs_emea_united_kingdom_search_core_brand_atlas_desktop&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624581&gclid=CjwKCAiA4rGCBhAQEiwAelVtizDjHx5031X3IqmRZghUTNn7V9t8X_S8bDyDob2mWKmhQcbf3ukDnRoCDgkQAvD_BwE) to host cloud database. Connected to backend by setting a heroku config variable MONGODB_URI to the connection string retrieved from MongoDB (NM as database user), and updated config/config.js to call on this environment variable. Needed to access port from Heroku configs as well.
 
+Lessons:
+I accidentally pushed a username and password to GitHub so I had to use bfg to remove the offending file. (I tried to use bfg --replace-text but ended up in a pickle, so just removed the file and then afterwards committed the correct file with the sensitive info omitted). Bfg accesses and edits every commit in git history so is useful for removing info from previous commits. How to use: [This blog is helpful](https://medium.com/@rhoprhh/removing-keys-passwords-and-other-sensitive-data-from-old-github-commits-on-osx-2fb903604a56)
+
+* ```$ brew install bfg``` install bfg
+* ```git clone --mirror git://this-repo...``` creates a copy of the repo
+* Create a text file with the text you want to find and replace, and optional replace text. eg:
+
+In password.txt file | Result
+-|-
+PASSWORD1                      | #Replace string 'PASSWORD1' with '***REMOVED***' (default)
+PASSWORD2==>examplePass        | # replace with 'examplePass' instead
+PASSWORD3==>                   | # replace with the empty string
+regex:password=\w+==>password= | # Replace, using a regex
+regex:\r(\n)==>$1              | # Replace Windows newlines with Unix newlines
+
+* Add this file to .gitignore # don't commit your sensitive data again!
+* ```bfg --replace-text password.txt```
+* Run the git commands it provides at end of process
+* git push
 
   # Book Me Up
   A web application to allow users to offer books to share with the community.
