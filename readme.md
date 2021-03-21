@@ -1,6 +1,6 @@
 <h2 align=center><a href="https://book-me-up.herokuapp.com/">Book Me Up</a></h2>
 
-<h4 align=center><a href="https://github.com/natashamcintyre/bookmeup-api#screenshots">Screenshots</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tech/framework-used">Tech Stack</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#features">Features</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#installation">Installation</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tests">Testing</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#how-to-use">How To Use</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#credits">Credits</a></h4>
+<h4 align=center><a href="https://github.com/natashamcintyre/bookmeup-api#screenshots">Screenshots</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tech-stack">Tech Stack</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#features">Features</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#installation">Installation</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tests">Testing</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#how-to-use">How To Use</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#credits">Credits</a></h4>
 
 A web application to allow users to offer books to share with the community. This is the backend API application. Please find the frontend [here](https://github.com/natashamcintyre/bookmeup)
 
@@ -16,8 +16,8 @@ To demonstrate the ability to build a high quality single page web app, in a new
 ## Screenshots
 ![Home Screen](https://github.com/argy-bargy/book_swap/blob/main/screenshots/Screenshot%202021-03-01%20at%2015.28.59.png)
 
-## Tech/framework used
-**Built with** (backend)
+## Tech Stack
+**Built with**
 - [Node.JS](https://nodejs.org)
 - [Express](https://expressjs.com)
 - [MongoDB](https://www.mongodb.com)
