@@ -1,3 +1,5 @@
+[![Book Me Up](https://github.com/natashamcintyre/bookmeup/blob/main/public/images/bookmeup.png)](https://book-me-up.herokuapp.com/)
+
 <h2 align=center><a href="https://book-me-up.herokuapp.com/">Book Me Up</a></h2>
 
 <h4 align=center><a href="https://github.com/natashamcintyre/bookmeup-api#screenshots">Screenshots</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tech-stack">Tech Stack</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#features">Features</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#installation">Installation</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tests">Testing</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#how-to-use">How To Use</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#credits">Credits</a></h4>
