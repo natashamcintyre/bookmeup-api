@@ -1,6 +1,4 @@
-[![Book Me Up](https://github.com/natashamcintyre/bookmeup/blob/main/public/images/bookmeup.png)](https://book-me-up.herokuapp.com/){target="_blank"}
-
-<h2 align=center><a href="https://book-me-up.herokuapp.com/"><img src="https://github.com/natashamcintyre/bookmeup/blob/main/public/images/bookmeup.png"></a></h2>
+<h2 align=center><a href="https://book-me-up.herokuapp.com/" target="_blank"><img src="https://github.com/natashamcintyre/bookmeup/blob/main/public/images/logo.png"></a></h2>
 
 <h4 align=center><a href="https://github.com/natashamcintyre/bookmeup-api#screenshots">Screenshots</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tech-stack">Tech Stack</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#features">Features</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#installation">Installation</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tests">Testing</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#how-to-use">How To Use</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#credits">Credits</a></h4>
 
@@ -111,10 +109,4 @@ To Stop:
 
 ## Credits
 
-  Team argy-bargy:  
-  [Aman Tank](https://github.com/AmanTank187)  
-  [Cathal Lavelle](https://github.com/calavell)  
-  [Chris Whitehouse](https://github.com/chriswhitehouse)  
-  [Kiki Dawson](https://github.com/kikidawson)  
-  [Natasha McIntyre](https://github.com/natashamcintyre)  
-  [Will Dixon](https://github.com/WillDixon93)  
+Team argy-bargy: [Aman Tank](https://github.com/AmanTank187), [Cathal Lavelle](https://github.com/calavell), [Chris Whitehouse](https://github.com/chriswhitehouse), [Kiki Dawson](https://github.com/kikidawson), [Natasha McIntyre](https://github.com/natashamcintyre) and [Will Dixon](https://github.com/WillDixon93)  
