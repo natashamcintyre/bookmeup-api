@@ -1,6 +1,6 @@
 <h2 align=center><a href="https://book-me-up.herokuapp.com/" target="_blank"><img src="https://github.com/natashamcintyre/bookmeup/blob/main/public/images/logo.png"></a></h2>
 
-<h4 align=center><a href="https://github.com/natashamcintyre/bookmeup-api#screenshots">Screenshots</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tech-stack">Tech Stack</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#features">Features</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#installation">Installation</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#how-to-use">How To Use</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tests">Testing</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#credits">Credits</a></h4>
+<h4 align=center><a href="https://github.com/natashamcintyre/bookmeup-api/blob/main/readme.md#screenshots">Screenshots</a> | <a href="https://github.com/natashamcintyre/bookmeup-api/blob/main/readme.md#tech-stack">Tech Stack</a> | <a href="https://github.com/natashamcintyre/bookmeup-api/blob/main/readme.md#features">Features</a> | <a href="https://github.com/natashamcintyre/bookmeup-api/blob/main/readme.md#installation">Installation</a> | <a href="https://github.com/natashamcintyre/bookmeup-api/blob/main/readme.md#how-to-use">How To Use</a> | <a href="https://github.com/natashamcintyre/bookmeup-api/blob/main/readme.md#tests">Testing</a> | <a href="https://github.com/natashamcintyre/bookmeup-api/blob/main/readme.md#credits">Credits</a></h4>
 
 A web application to allow users to offer books to share with the community. This is the backend API application. Please find the frontend [here](https://github.com/natashamcintyre/bookmeup)
 
@@ -56,7 +56,7 @@ If you do have Catalina or above:
 * ```$ sudo mkdir -p /System/Volumes/Data/data/db```
 * ```$ sudo chown -R `id -un` /System/Volumes/Data/data/db```
 
-## How to use?
+## How to use
 The frontend and backend run independently on separate servers.
 
 First, [ensure the database is running](https://github.com/natashamcintyre/bookmeup-api/blob/main/readme.md#database-setup)
