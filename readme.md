@@ -1,4 +1,4 @@
-[![Book Me Up](https://github.com/natashamcintyre/bookmeup/blob/main/public/images/bookmeup.png)](https://book-me-up.herokuapp.com/)
+[![Book Me Up](https://github.com/natashamcintyre/bookmeup/blob/main/public/images/bookmeup.png)](https://book-me-up.herokuapp.com/){target="_blank"}
 
 <h2 align=center><a href="https://book-me-up.herokuapp.com/">Book Me Up</a></h2>
 
