@@ -1,17 +1,11 @@
 <h2 align=center><a href="https://book-me-up.herokuapp.com/" target="_blank"><img src="https://github.com/natashamcintyre/bookmeup/blob/main/public/images/logo.png"></a></h2>
 
-<h4 align=center><a href="https://github.com/natashamcintyre/bookmeup-api#screenshots">Screenshots</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tech-stack">Tech Stack</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#features">Features</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#installation">Installation</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tests">Testing</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#how-to-use">How To Use</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#credits">Credits</a></h4>
+<h4 align=center><a href="https://github.com/natashamcintyre/bookmeup-api#screenshots">Screenshots</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tech-stack">Tech Stack</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#features">Features</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#installation">Installation</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#how-to-use">How To Use</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#tests">Testing</a> | <a href="https://github.com/natashamcintyre/bookmeup-api#credits">Credits</a></h4>
 
 A web application to allow users to offer books to share with the community. This is the backend API application. Please find the frontend [here](https://github.com/natashamcintyre/bookmeup)
 
 ## Motivation
 To demonstrate the ability to build a high quality single page web app, in a new framework as part of a team practising agile development that is focused on thorough test driven development process. Also, to enjoy ourselves.
-
-## Build status
-[![Build Status](https://travis-ci.com/argy-bargy/book_swap.svg?branch=main)](https://travis-ci.com/argy-bargy/book_swap)
-
-## Code style
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
 ## Screenshots
 ![Home Screen](https://github.com/argy-bargy/book_swap/blob/main/screenshots/Screenshot%202021-03-01%20at%2015.28.59.png)
@@ -36,7 +30,7 @@ Key Features:
 ## Code Example
 Backend app.js:
 ```
-Refactors needed:
+Pending (refactoring)
 ```
 
 ## Installation
@@ -61,25 +55,6 @@ If you have not yet upgraded to MacOs Catalina or above:
 If you do have Catalina or above:
 * ```$ sudo mkdir -p /System/Volumes/Data/data/db```
 * ```$ sudo chown -R `id -un` /System/Volumes/Data/data/db```
-
-
-## API Reference
-This project utilizes the OpenLibrary Books API: https://openlibrary.org/dev/docs/api/books, to request all related book information.
-
-## Tests
-Cypress for feature tests, Enzyme for React unit tests, and Mocha-Chai for Node.js tests.
-
-For end to end testing, the backend will need to be up and running. Please follow the instruction below first, then read the instructions in the [frontend readme](https://github.com/natashamcintyre/bookmeup/blob/main/readme.md#tests) to run the tests:
-```
-$ npm start
-```
-
-### Linting
-We are using ESlint for frontend and backend linting.
-
-To run from each of the project directories:
-
-`$ npx eslint .`
 
 ## How to use?
 The frontend and backend run independently on separate servers.
@@ -107,6 +82,29 @@ To check it's working:
 To Stop:
 * ```$ brew services stop mongodb-community```
 
+## Tests
+Cypress for feature tests, Enzyme for React unit tests, and Mocha-Chai for Node.js tests.
+
+For end to end testing, the backend will need to be up and running. Please follow the instruction below first, then read the instructions in the [frontend readme](https://github.com/natashamcintyre/bookmeup/blob/main/readme.md#tests) to run the tests:
+```
+$ npm start
+```
+
+### Linting
+We are using ESlint for frontend and backend linting.
+
+To run from each of the project directories:
+
+`$ npx eslint .`
+
+### Build status
+[![Build Status](https://travis-ci.com/argy-bargy/book_swap.svg?branch=main)](https://travis-ci.com/argy-bargy/book_swap)
+
+### Code style
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+
 ## Credits
 
 Team argy-bargy: [Aman Tank](https://github.com/AmanTank187), [Cathal Lavelle](https://github.com/calavell), [Chris Whitehouse](https://github.com/chriswhitehouse), [Kiki Dawson](https://github.com/kikidawson), [Natasha McIntyre](https://github.com/natashamcintyre) and [Will Dixon](https://github.com/WillDixon93)  
+
+This project utilizes the OpenLibrary Books API: https://openlibrary.org/dev/docs/api/books, to request all related book information.
