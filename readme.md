@@ -108,3 +108,5 @@ To run from each of the project directories:
 Team argy-bargy: [Aman Tank](https://github.com/AmanTank187), [Cathal Lavelle](https://github.com/calavell), [Chris Whitehouse](https://github.com/chriswhitehouse), [Kiki Dawson](https://github.com/kikidawson), [Natasha McIntyre](https://github.com/natashamcintyre) and [Will Dixon](https://github.com/WillDixon93)  
 
 This project utilizes the OpenLibrary Books API: https://openlibrary.org/dev/docs/api/books, to request all related book information.
+
+Please visit the [Wiki](https://github.com/natashamcintyre/bookmeup-api/wiki) for known issues and Argy-Bargy's original [Book Me Up Wiki](https://github.com/argy-bargy/book_swap/wiki) for further documentation such as daily summaries, reflections and little nuggets of learning.
